@@ -9,6 +9,9 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       transform: true,
+      transformOptions: {
+        enableImplicitConversion: true,
+      }, //transforma el formato de los dt, eje string a number
       whitelist: true, //Elimina las propiedades demas
       forbidNonWhitelisted: true, //Notifica las propiedades que estan demas
     }),
