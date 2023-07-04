@@ -16,6 +16,7 @@ async function bootstrap() {
       forbidNonWhitelisted: true, //Notifica las propiedades que estan demas
     }),
   );
-  await app.listen(5000);
+  await app.listen(process.env.PORT);
+  console.log(`This app is running on port ${process.env.PORT}`);
 }
 bootstrap();
