@@ -9,8 +9,7 @@
     "routes": [
         {
             "handle": "dist/main.js",
-            "src": "/(.*)",
-            "methods": [ "GET", "POST", "PUT", "PATCH", "DELETE" ]
+            "src": "/(.*)"
         }
     ]
 }
