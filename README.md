@@ -33,3 +33,15 @@ http://localhost:5000/api/v2/seed
 
 * MongoDB
 * Nest
+## IMPORTANTE
+
+* Reemplezar todas las importaciones de ```__src/..__``` y renomnrar la copia a ```__../..__```
+```
+'src/pokemon/entities/pokemon.entity';
+```
+* Por
+
+```
+'../pokemon/entities/pokemon.entity';
+```
+

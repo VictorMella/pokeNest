@@ -39,6 +39,6 @@ export class SeedService {
     });
 
     this.pokemonModel.insertMany(pokeonToInsert);
-    return `Se crearon ${650} registros`;
+    return `Se crearon ${30} registros`;
   }
 }
