@@ -33,6 +33,7 @@ http://localhost:5000/api/v2/seed
 
 * MongoDB
 * Nest
+* Docker
 ## IMPORTANTE
 
 * Reemplezar todas las importaciones de ```__src/..__``` y renomnrar la copia a ```__../..__```
@@ -45,3 +46,15 @@ http://localhost:5000/api/v2/seed
 '../pokemon/entities/pokemon.entity';
 ```
 
+
+## Production Build
+1. Crear el archivo ```.env.prod```
+2. Llenar la variables de entono de prod
+3. Crear la nueva imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+4. Correr la imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```
